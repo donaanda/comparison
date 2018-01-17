@@ -1,0 +1,20 @@
+Dona Anda 29856735
+Andrew Wei 72993421
+
+
+For this assignment, we chose the Heapsort algorithm for solving the problem of K-largest.
+On the basis of empirical observations, we observed that our algorithm used approximately
+n(log k) comparisons for both the average case and the worst case.
+
+In terms of algorithmic theory, heapSort makes a maximum of 3n(log n) comparisons. This
+can be shown because heapSort calls heapify 1.5*n times maximum. Heapify has a 
+maximum of log n iterations (its structure is similar to that of a tree). Each iteration 
+makes 2 comparisons. Overall, heapSort makes a maximum of 3n(log n) comparisons. 
+
+When we ran our algorithm, when n=100, and k=10, the maximum number of comparisons was 1053
+and the average number of comparisons was 1027.46. When n=10,000, and k=40, the maximum number 
+of comparisons was 235637 and the average number of comparisons was 235371.08. Our actual
+number of comparisons in practive was larger than that of the theoretical number of comparisons. 
+Although heapsort has a relatively low number of comparisons based on algorithmic theory, the 
+number of comparisons was higher in practice, and the cost of maintaining the heap proved to be
+more costly than initially anticipated.
